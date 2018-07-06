@@ -1,0 +1,238 @@
+@tablet-width: 768px;
+@desktop-width: 1200px;
+
+
+
+.page-header {
+  width: 320px;
+  margin: 0 auto;
+
+}
+.hidden {
+  display: none;
+}
+
+.site-list {
+  list-style: none;
+  font-weight: bold;
+  margin: 0 auto;
+  padding: 0;
+  width: 100%;
+  font-size: 17px;
+    &__item {
+      height: 78px;
+      border-top: 1px solid #ececec;
+        &--zoom a::before,
+        &--bag a::before {
+          content: "";
+          position: absolute;
+          width: 18px;
+          height: 19px;
+          background-image: url('http://via.placeholder.com/18x19');
+          top: 30px;
+          left: 32px;
+      }
+        &--bag a::before {
+          width: 21px;
+          height: 18px;
+          background-image: url('http://via.placeholder.com/21x18');
+          top: 29px;
+          left: 30px;
+        }
+        & a {
+          position: relative;
+          display: block;
+          text-decoration: none;
+          padding: 25px 0px 29px 75px;
+          color: #000000;
+        }
+    }
+    }
+
+
+.page-header {
+  &__button {
+    align-self: center;
+  }
+  &__logo {
+    margin-right: 68px;
+    align-self: center;
+    &-image {
+      width: 86px;
+      height: 35px;
+      background-image: url("http://via.placeholder.com/86x35");
+    }
+  }
+
+}
+
+.button {
+  width: 20px;
+  height: 20px;
+  font-size: 0px;
+  margin-right: 30px;
+}
+
+
+.menu-wrapper {
+  display: flex;
+  flex-direction: row;
+  justify-content: flex-end;
+  height: 79px;
+  border-top: 1px solid #ececec;
+}
+
+@media (min-width: @tablet-width) {
+  .page-header {
+    display: flex;
+    width: 768px;
+    height: 88px;
+    border-bottom: 1px solid #ececec;
+    &__logo {
+      margin-left: 48px;
+      &-image {
+        width: 113px;
+        height: 46px;
+        background-image: url("http://via.placeholder.com/113x46");
+      }
+    }
+  }
+  .button {
+    .hidden;
+  }
+  .main-nav {
+    display: flex;
+  }
+  .site-list {
+    display: flex;
+    flex-wrap: wrap;
+    position: relative;
+    & li:nth-child(3) {
+      order: 1;
+      font-size: 0;
+      width: 82px;
+      border-left: 1px solid #ececec;
+      border-right: 1px solid #ececec;
+      & a {
+        padding-top: 58px;
+        &::before {
+          top: 35px;
+        }
+      }
+    }
+    & li:nth-child(4) {
+      order: 2;
+      & a {
+        padding: 30px 51px 34px 82px;
+      }
+    }
+    & li:nth-child(1) {
+      order: 3;
+      position: absolute;
+      top: 88px;
+      left: -205px;
+      border-top: 0px solid;
+      height: 0;
+      font-size: 15px;
+      & a {
+        padding: 20px 17px 29px 25px;
+      }
+    }
+    & li:nth-child(2) {
+      order: 4;
+      position: absolute;
+      top: 88px;
+      left: -37px;
+      border-top: 0px solid;
+      font-size: 15px;
+      height: 0;
+      & a {
+        padding: 20px 17px 29px 25px;
+      }
+    }
+    &__item {
+      height: 87px;
+      border-top: 0px solid;
+      &--bag a::before {
+        top: 34px;
+        left: 30px
+    }
+  }
+  }
+  .menu-wrapper {
+    height: 87px;
+  }
+  .main-nav {
+    width: 100%;
+    &__list {
+      justify-content: flex-end;
+      align-items: center;
+    }
+  }
+}
+
+@media (min-width: @desktop-width) {
+  .page-header {
+    width: 1200px;
+    justify-content: flex-end;
+    &__logo {
+      margin-right: 0px;
+      margin-left: 0px;
+      &-image {
+        width: 149px;
+        height: 72px;
+        background-image: url('http://via.placeholder.com/149x72');
+      }
+    }
+  }
+  .menu-wrapper {
+    margin-right: 101px;
+  }
+  .main-nav {
+    width: initial;
+  }
+  .site-list {
+    &__item {
+      &--bag {
+        & a::before {
+          top: 4px;
+          left: -51px;
+        }
+      }
+      & a {
+        padding: 0;
+      }
+    }
+    & li:nth-child(4) {
+      margin-right: 45px;
+      & a {
+        padding: 0;
+        margin: 30px 51px 34px 82px;
+      }
+    }
+    & li:nth-child(1) {
+      height: 24px;
+      top: 1px;
+      left: -776px;
+      font-size: 17px;
+      border-right: 1px solid #ececec;
+      padding: 30px 36px 33px 75px;
+    & a {
+      padding: 0;
+    }
+    }
+    & li:nth-child(2) {
+      top: 31px;
+      left: -481px;
+      font-size: 17px;
+    & a {
+      padding: 0;
+    }
+    }
+    & li:nth-child(3) {
+      & a {
+        padding: 0;
+      }
+    }
+    }
+  }
