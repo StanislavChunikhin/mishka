@@ -1,8 +1,11 @@
 <header class="page-header">
   <div class="menu-wrapper">
   <a class="page-header__logo" href="#">
-    <div class="page-header__logo-image">
-    </div>
+    <picture>
+        <source media="(min-width: 1200px)" srcset="img/mishka_desktop.svg">
+        <source media="(min-width: 768px)" srcset="img/mishka_tablet.svg">
+        <img src="img/mishka_mobile.svg" alt="Логотип">
+    </picture>
   </a>
   <button class="page-header__button button" type="button">Открыть меню</button>
 </div>
@@ -15,10 +18,10 @@
         <a href="form.html">Вязание на заказ</a>
       </li>
       <li class="site-list__item site-list__item--zoom">
-        <a href="#">Поиск по сайту</a>
+        <a href="#"><svg width="18" height="19"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#zoom"></use></svg>Поиск по сайту</a>
       </li>
       <li class="site-list__item site-list__item--bag">
-        <a href="#">Корзина: пока пуста</a>
+        <a href="#"><svg width="21" height="18"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#bag"></use></svg>Корзина: пока пуста</a>
       </li>
     </ul>
   </nav>
