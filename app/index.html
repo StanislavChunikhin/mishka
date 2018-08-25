@@ -1,0 +1,142 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Mishka Store</title>
+  <link rel="stylesheet" href="css/main.css">
+  <script src="js/picturefill.js"></script>
+  <script src="js/svgxuse.js" defer></script>
+  <script src="https://maps.googleapis.com/maps/api/js?key=AIzaSyB01H8HJ2LGTDSkGzOHseG5pTmL7wI8LIU&callback=initMap"
+    async defer></script>
+
+
+</head>
+
+<body>
+  //= svg.html
+
+  //= header.html
+
+  <main class="page-main">
+<div class="wrapper">
+    <section class="header">
+  <ul class="header-list offer-list">
+    <li class="offer-list__item">
+      <a href="#">Новые поступления</a>
+    </li>
+    <li class="offer-list__item">
+      <a href="#">Распродажа</a>
+    </li>
+    <li class="offer-list__item">Бесплатная доставка по России</li>
+  </ul>
+      <h1 class="header__title title">Милые штуки <br class="title-mode">ручной <br class="title-mode"> работы для дома</h1>
+      <ul class="header-menu menu">
+        <li class="menu__item">
+          <a href="#">Предметы интерьера</a>
+          <span class="menu__item-logo lamp-logo"></span>
+        </li>
+        <li class="menu__item">
+          <a href="#">Детские игрушки</a>
+          <span class="menu__item-logo brick-logo"></span>
+        </li>
+      </ul>
+    </section>
+  </div>
+<div class="wave-wrapper">
+    <section class="featured">
+      <div class="featured__header">
+      <h2 class="featured__title title">Вязаные корзинки</h2>
+      <h3 class="featured__offer offer">Товар недели</h3>
+    </div>
+    <div class="featured__description-block">
+      <p class="featured__description description">Экологически чистая пряжа, ручная работа. Доступны в шести расцветках, и трех размерах.</p>
+      <table class="featured__table table">
+        <tr class="table__row">
+          <td>Цвет</td>
+          <td><q>Тиффани</q>/серый</td>
+        </tr>
+        <tr class="table__row">
+          <td>Диаметр:</td>
+          <td>25 см</td>
+        </tr>
+        <tr class="table__row">
+          <td>Высота:</td>
+          <td>15 см</td>
+        </tr>
+      </table>
+    </div>
+      <picture class="featured__image image">
+        <source type="image/webp" media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.webp 1x, img/triple-set-desktop@2x.webp 2x">
+          <source type="image/webp" media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.webp 1x, img/triple-set-tablet@2x.webp 2x">
+          <source type="image/webp" srcset="img/triple-set-mobile@1x.webp">
+
+        <source media="(min-width: 1200px)" srcset="img/triple-set-desktop@1x.jpg 1x, img/triple-set-desktop@2x.jpg 2x">
+        <source media="(min-width: 768px)" srcset="img/triple-set-tablet@1x.jpg 1x, img/triple-set-tablet@2x.jpg 2x">
+        <img src="img/triple-set-mobile@1x.jpg" alt="Три корзинки">
+      </picture>
+      <div class="featured__price-block">
+      <p class="featured__price price">Цена: 990 руб.</p>
+      <button class="featured__button button">Заказать</button>
+    </div>
+
+    </section>
+  </div>
+
+    <section class="about-us">
+      <h3 class="about-us__title title">Коротко о нас:</h3>
+      <ul class="about-us__feature feature-list">
+          <li class="feature-list__item"><svg width="32" height="37"><use xlink:href="img/sprite.svg#flower"></use></svg>Экологически чистые материалы</li>
+          <li class="feature-list__item"><svg width="47" height="27"><use xlink:href="img/sprite.svg#carpet"></use></svg>Скандинавский стиль по российской цене</li>
+          <li class="feature-list__item"><svg width="34" height="27"><use xlink:href="img/sprite.svg#heart"></use></svg>Увеличивает лайки на фотографиях</li>
+          <li class="feature-list__item"><svg width="35" height="34"><use xlink:href="img/sprite.svg#ball"></use></svg>Связано вручную с любовью и умилением</li>
+          <li class="feature-list__item"><svg width="55" height="23"><use xlink:href="img/sprite.svg#rocket"></use></svg>Поддержка отечественного производителя</li>
+          <li class="feature-list__item"><svg width="33" height="32"><use xlink:href="img/sprite.svg#present"></use></svg>Поставляется в подарочной упаковке</li>
+      </ul>
+    </section>
+<div class="wave-wrapper">
+    <section class="comments">
+      <h2 class="comments__title title">Отзывы</h2>
+      <button class="comments__button button" type="button" name="button">Написать</button>
+      <blockquote class="comments__review review">
+        <p class="review__text text">Я молодая мама, но все равно фотографии не набирали и близко такого количества лайков, как у популярных инстамамочек. В отчаянии, я накупила аксессуаров и игрушек в Мишке, и мои фотографии сразу стали более стильными, а также набирают больше лайков!</p>
+        <cite class="review__author author-name">
+          <p class="author-name__name">Анастасия Красильникова</p>
+          <p class="author-name__login">@misssssiskras</p>
+        </cite>
+      </blockquote>
+      <div class="comments__button-block">
+      <button class="comments__button-prev"></button>
+      <button class="comments__button-next"></button>
+    </div>
+    </section>
+  </div>
+
+    <section class="contacts">
+      <h2>Контакты</h2>
+      <div class="contacts__logo"><svg width="47" height="81"><use xmlns:xlink="http://www.w3.org/1999/xlink" xlink:href="#flag"></use></svg></div>
+      <div class="contacts__info info">
+        <ul class="info__email">
+          <li>e-mail:</li>
+          <li><a href="mailto:info@mimimishkashop.ru" class="contacts__info--email">info@mimimishkashop.ru</a></li>
+        </ul>
+        <ul class="info__adress">
+          <li>адрес:</li>
+          <li>г. Санкт-Петербург,<br>ул. Большая Конюшенная,<br>д. 19/8, офис 101</li>
+        </ul>
+      </div>
+      <div class="contacts__map map" id="map"></div>
+      <button class="contacts__button button">Напишите нам</button>
+    </section>
+
+    //= footer.html
+
+  </main>
+  <script type="text/javascript" src="js/main.js"></script>
+
+
+</body>
+
+</html>

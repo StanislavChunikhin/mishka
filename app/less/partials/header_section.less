@@ -1,0 +1,278 @@
+.header {
+  min-height: 489px;
+  width: 320px;
+  margin: 0 auto;
+  background-image: url('../img/hero-mobile@1x.jpg');
+  background-repeat: no-repeat;
+  background-size: auto;
+  background-position: center -17px;
+
+}
+
+
+
+
+.header-list {
+  margin: 0;
+  position: relative;
+}
+
+.offer-list__item {
+  .hidden
+}
+
+.title {
+  margin: 0;
+  font-size: 27px;
+  text-align: center;
+}
+
+.header__title {
+  padding: 70px 30px 10px 30px;
+  line-height: 30px;
+  color: #000;
+}
+
+
+.menu {
+  list-style: none;
+  position: relative;
+  padding: 0;
+  margin: 0;
+  font-size: 19px;
+  font-weight: bold;
+  &__item {
+    height: 104px;
+    & a {
+      display: block;
+      padding: 25px 194px 31px 28px;
+      line-height: 24px;
+      color: #ffffff;
+      &::after {
+        content: '';
+        position: absolute;
+      }
+      }
+    &:nth-child(1) {
+      background-color: #63d1bb;
+      & a::after {
+        width: 40px;
+        height: 62px;
+        top: 23px;
+        right: 36px;
+        background-image: url('../img/icon-interior.svg');
+        opacity: 0.2;
+     }
+    }
+    &:nth-child(2) {
+      background-color: #56c3b2;
+      & a::after {
+        width: 60px;
+        height: 60px;
+        top: 125px;
+        right: 28px;
+        background-image: url('../img/icon-brick.svg');
+        opacity: 0.2;
+      }
+    }
+  }
+}
+
+.header-menu {
+  margin-top: 112px;
+}
+
+.menu__item:active a {
+  color: #8be2d0;
+}
+
+.menu__item:active a::after {
+  opacity: 0.1;
+}
+
+@media (min-width: @tablet-width) {
+
+  .header {
+    display: flex;
+    flex-direction: column;
+    width: @tablet-width;
+    min-height: 744px;
+    background-image: url('../img/hero-desktop@1x.jpg');
+    background-position: center -1px;
+  }
+
+
+  .header-menu {
+    margin-top: 365px;
+  }
+
+  .offer-list__item:nth-child(3) {
+    display: block;
+    position: absolute;
+    right: 50px;
+    top: 18px;
+    font-size: 15px;
+    color: #444444;
+  }
+  .title {
+    font-size: 43px;
+  }
+  .title-mode {
+    display: none;
+  }
+
+  .header__title {
+    padding: 150px 63px 0px 60px;
+    line-height: 53px;
+  }
+
+  .menu {
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+  }
+
+  .menu__item {
+    width: 334px;
+    height: 117px;
+    margin-top: 5px;
+  }
+
+  .menu__item:hover {
+    margin-top: 0;
+    height: 122px;
+  }
+
+  .menu__item:active a {
+    color: #8be2d0;
+  }
+
+  .menu__item a {
+    padding: 30px 194px 31px 35px;
+    line-height: 29px;
+  }
+
+  .menu__item:nth-child(1) a::after {
+    top: 30px;
+    right: 421px;
+  }
+
+  .menu__item:nth-child(2) a::after {
+    top: 32px;
+    right: 84px;
+  }
+
+  .menu__item:hover a::after {
+    top: 25px;
+    opacity: 0.3;
+  }
+
+  .menu__item:active a::after {
+    opacity: 0.1;
+  }
+
+}
+
+
+@media (min-resolution: 144dpi), (min-resolution: 1.5dppx) {
+  .header {
+    background-image: url('../img/hero-mobile@2x.jpg');
+    background-size: 575px auto;
+  }
+
+  @media (min-width: @tablet-width)   {
+    .header {
+      background-image: url('../img/hero-desktop@2x.jpg');
+      background-size: 1150px auto;
+    }
+}
+}
+
+@media (min-width: @desktop-width) {
+  .header {
+    width: 1200px;
+    background-position: 6px -1px;
+  }
+  .menu__item {
+    width: 525px;
+    margin-top: 5px;
+  }
+
+  .menu__item:hover {
+    margin-top: 0;
+    height: 122px;
+  }
+
+
+  .menu {
+    justify-content: flex-start;
+  }
+  .header-menu {
+    margin-left: 56px;
+    margin-top: 355px;
+  }
+  .menu__item a {
+    padding: 30px 315px 31px 37px;
+  }
+  .menu__item:nth-child(1) a::after {
+    top: 30px;
+    right: 656px;
+  }
+
+  .menu__item:nth-child(2) a::after {
+    top: 32px;
+    right: 129px;
+  }
+
+  .menu__item:hover a::after {
+    top: 25px;
+    opacity: 0.3;
+  }
+
+  .menu__item:active a::after {
+    opacity: 0.1;
+  }
+
+  .offer-list__item {
+    display: inline-block;
+    &:nth-child(3) {
+      right: 95px;
+      top: 1px;
+    }
+    &:nth-child(2), :nth-child(1) {
+      font-weight: bold;
+      color: #000000;
+    }
+    & a {
+      font-size: 15px;
+    }
+    &:nth-child(2) {
+      margin-left: 56px;
+    }
+  }
+  .header-list {
+    margin-top: 18px;
+    margin-left: 18px;
+  }
+  .header__title {
+    padding-top: 114px;
+    padding-left: 227px;
+    padding-right: 263px;
+    line-height: 56px;
+  }
+.title {
+  font-size: 53px;
+}
+.title-mode {
+  display: none;
+}
+
+}
+
+.offer-list__item a:hover {
+  color: #666666;
+}
+
+.offer-list__item a:active {
+  color: #b2b2b2;
+}
